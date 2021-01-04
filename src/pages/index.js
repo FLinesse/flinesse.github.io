@@ -1,22 +1,64 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import file from '../assets/blank.pdf'
+import './index.css';
+
+function Section({ emoji, children, ...props }) {
+  return (
+    <section {...props}>
+      <h3>{emoji}</h3>
+      <p>{children}</p>
+    </section>
+  );
+}
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <>
+    <Helmet
+      title="Joshua Lin"
+      meta={[
+        { name: 'description', content: 'Joshua Lin' },
+        {
+          name: 'keywords',
+          content:
+            'Joshua, Lin, profile, resume, new grad, embedded, software, engineer, developer, San Francisco, Bay Area, East Bay',
+        },
+      ]}
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+    <div className="container">
+      <header>
+        <h1>joshua lin</h1>
+        <h2>san francisco bay area</h2>
+        <h5>(currently: <span>🇹🇼</span>)</h5>
+      </header>
+      <div className="sections">
+        <Section emoji="🧨">
+          tbd a
+        </Section>
+        <Section emoji="🧨">
+          tbd b
+        </Section>
+        <Section emoji="🧨">
+          tbd c
+        </Section>
+        <Section emoji="🧨">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </Section>
+        <Section emoji="🧨">
+          Look here, a {' '}
+          <a href={file}>file</a>!
+        </Section>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  </>
+);
 
-export default IndexPage
+export default IndexPage;
