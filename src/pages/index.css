@@ -52,6 +52,8 @@ header {
 
 section {
   display: flex;
+  min-width: 300px;
+  max-width: 900px;
   margin-bottom: 25px
 }
 

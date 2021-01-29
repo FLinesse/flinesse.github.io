@@ -38,23 +38,26 @@ const IndexPage = () => (
         <h5>(currently: <span>🇹🇼</span>)</h5>
       </header>
       <div className="sections">
-        <Section emoji="🧨">
-          tbd a
+        <Section emoji="👋">
+          Hey there &mdash; I'm Josh, a recent graduate from UC Berkeley. Go Bears!
         </Section>
-        <Section emoji="🧨">
-          tbd b
+        <Section emoji="‍👨🏻‍💻">
+          I like to make things with computers. I especially enjoy the tangible and interactive elements of
+          building physical systems. I savor the process of reasoning how things function and come together.
         </Section>
-        <Section emoji="🧨">
-          tbd c
+        <Section emoji="🌐">
+          My current interests are in embedded systems and IoT. I would love to become involved and learn
+          more about powering the next generation of smart devices, potentially exploring novel applications
+          in healthcare, hospitality, and infrastructure.
         </Section>
-        <Section emoji="🧨">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <Section emoji="🍱">
+          Among my other favorite moments involve trying new foods, discovering indie sci-fi flicks, learning
+          about music theory, and moving through autonomy.
         </Section>
-        <Section emoji="🧨">
-          Look here, a {' '}
-          <a href={file}>file</a>!
+        <Section emoji="📥">
+          Please don't be a stranger. Feel free to get in touch with me at
+          <a href="mailto:jflinesse@gmail.com"> jflinesse@gmail.com</a> or find me on
+          <a href="https://www.linkedin.com/in/zjosh/"> LinkedIn</a>.
         </Section>
       </div>
     </div>
