@@ -56,8 +56,8 @@ const IndexPage = () => (
         </Section>
         <Section emoji="📥">
           Please don't be a stranger. Feel free to get in touch with me at
-          <a href="mailto:jflinesse@gmail.com"> jflinesse@gmail.com</a> or find me on
-          <a href="https://www.linkedin.com/in/zjosh/"> LinkedIn</a>.
+          {' '}<a href="mailto:jflinesse@gmail.com">jflinesse@gmail.com</a> or find me on
+          {' '}<a href="https://www.linkedin.com/in/zjosh/">LinkedIn</a>.
         </Section>
       </div>
     </div>
